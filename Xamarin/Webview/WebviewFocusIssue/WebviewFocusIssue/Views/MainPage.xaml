@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WebviewFocusIssue.Converters"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:controls="clr-namespace:WebviewFocusIssue.Controls"
+             xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             x:Class="WebviewFocusIssue.Views.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:HtmlSourceConverter x:Key="HtmlSourceConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView Grid.Row="1" Orientation="Horizontal"  VerticalOptions="End" HorizontalOptions="FillAndExpand" Margin="10,10,10,10">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="3" >
+                        <Button Command="{Binding ToggleBoldCommand}" Text="Bolder" ></Button>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <controls:HybridWebView x:Name="Browser" 
+                                    Source="{Binding EditorContent, Converter={StaticResource HtmlSourceConverter}}"  
+                                 VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="500" WidthRequest="500" >
+                <controls:HybridWebView.Behaviors>
+                    <b:EventToCommandBehavior EventName="Navigated" 
+                                      Command="{Binding PageLoadedCommand}"
+                                      CommandParameter="" />
+                </controls:HybridWebView.Behaviors>
+            </controls:HybridWebView>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

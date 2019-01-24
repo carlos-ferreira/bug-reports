@@ -1,0 +1,99 @@
+* {
+    outline: 0px solid transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+        
+html,body{
+    width: 100%;
+    height: 100%;
+    padding:0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+   max-width:75%;
+   height:auto;
+}
+
+[contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+
+#editor_container{
+    width: 95%;
+    height: 98%;
+    margin: 15px;
+}
+
+#title{
+    font-size: 1em;
+    outline: none !important;
+    overflow:hidden;
+    border:none;
+    border-bottom: 1px solid silver !important;
+    width:95%;
+}
+
+div#content{
+    font-size: 1em;
+    outline: none !important;
+    overflow-y:auto;
+    margin-top: 15px;
+    height:100%;
+}
+
+#htmlEditor{
+    font-size: 1.1em;
+    outline: none !important;
+    overflow-y:auto;
+    margin: 0;
+    height:100%;
+    background-color:grey!important;
+}
+
+.hljs{
+    background-color:grey!important;
+    height:100%!important;
+}
+
+hr.more{
+    border-width: 1px 0 0 0;
+    border-style: dashed;
+    border-color: #666;
+    height: 8px;
+    background: #ddd;
+ }
+
+
+pre{
+    white-space: pre-line;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+
+}
+
+blockquote:before {
+  color: orange;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+

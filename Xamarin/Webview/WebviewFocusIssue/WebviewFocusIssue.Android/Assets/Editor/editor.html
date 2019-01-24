@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="libs/highlight/styles/agate.css">
+    <script src="libs/editor.js"></script>
+    <script src="libs/highlight/highlight.pack.js"></script>
+    <script src="libs/rangy/rangy-core.js"></script>
+    <script src="libs/rangy/rangy-selectionsaverestore.js"></script>
+    <script src="libs/rangy/rangy-classapplier.js"></script>
+    <script src="libs/rangy/rangy-serializer.js"></script>
+</head>
+
+<body>
+<div id="editor_container">
+    <input id="title" type="text" placeholder="Title"/>
+    <div id="content" contenteditable="true" placeholder="Content">
+    </div>
+</div>
+<pre id="htmlEditor" style="display:none;">
+    <code class="html" contenteditable="true"></code>
+</pre>
+<script type="text/javascript">
+    window.highlighter=rangy.createHighlighter();
+
+</script>
+
+</body>
+
+</html>

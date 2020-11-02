@@ -14,24 +14,19 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <ScrollView Grid.Row="1" Orientation="Horizontal"  VerticalOptions="End" HorizontalOptions="FillAndExpand" Margin="10,10,10,10">
-                <StackLayout>
-                    <StackLayout Orientation="Horizontal" Padding="3" >
-                        <Button Command="{Binding ToggleBoldCommand}" Text="Bolder" ></Button>
-                    </StackLayout>
-                </StackLayout>
-            </ScrollView>
-            <controls:HybridWebView x:Name="Browser" 
-                                    Source="{Binding EditorContent, Converter={StaticResource HtmlSourceConverter}}"  
-                                 VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="500" WidthRequest="500" >
-                <controls:HybridWebView.Behaviors>
-                    <b:EventToCommandBehavior EventName="Navigated" 
-                                      Command="{Binding PageLoadedCommand}"
-                                      CommandParameter="" />
-                </controls:HybridWebView.Behaviors>
-            </controls:HybridWebView>
-          
-        </StackLayout>
+                    <AbsoluteLayout>
+            <Button Command="{Binding ToggleBoldCommand}" Text="Bolder" AbsoluteLayout.LayoutFlags="All"  AbsoluteLayout.LayoutBounds="0.25, 0.25, 0.5, 0.5"></Button>
+                    <controls:HybridWebView x:Name="Browser" 
+                                            Source="{Binding EditorContent, Converter={StaticResource HtmlSourceConverter}}"  
+                                         VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" AbsoluteLayout.LayoutFlags="SizeProportional"  
+                                            AbsoluteLayout.LayoutBounds="3.25, 3.25, 3.5, 3.5" >
+                        <controls:HybridWebView.Behaviors>
+                            <b:EventToCommandBehavior EventName="Navigated" 
+                                              Command="{Binding PageLoadedCommand}"
+                                              CommandParameter="" />
+                        </controls:HybridWebView.Behaviors>
+                    </controls:HybridWebView>
+            </AbsoluteLayout>
+
     </ContentPage.Content>
 </ContentPage>

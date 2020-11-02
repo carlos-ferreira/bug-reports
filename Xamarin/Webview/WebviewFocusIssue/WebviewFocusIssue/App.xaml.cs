@@ -39,7 +39,7 @@ namespace WebviewFocusIssue
         protected override void OnInitialized()
         {
             InitializeComponent();
-            NavigationService.NavigateAsync("MainPage");
+            NavigationService.NavigateAsync("/MainPage");
          
         }
 

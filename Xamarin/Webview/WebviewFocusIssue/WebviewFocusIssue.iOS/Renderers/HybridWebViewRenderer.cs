@@ -23,26 +23,6 @@ namespace WebviewFocusIssue.iOS.Renderers
         WebNavigationEvent _lastBackForwardEvent;
         HybridWebView WebView => Element as HybridWebView;
 
-        public override bool CanBecomeFirstResponder => true;
-
-        public override bool CanResignFirstResponder => true;
-
-        public UIView CustomInputAccessoryView { get; set; }
-        public override UIView InputAccessoryView
-        {
-            get
-            {
-                return CustomInputAccessoryView;
-            }
-        }
-
-        public UIInputViewController CustomInputAccessoryViewController { get; set; }
-
-        public override UIInputViewController InputAccessoryViewController
-        {
-            get { return base.InputAccessoryViewController; }
-        }
-
         protected override void OnElementChanged(ElementChangedEventArgs<HybridWebView> e)
         {
             base.OnElementChanged(e);
@@ -67,14 +47,14 @@ namespace WebviewFocusIssue.iOS.Renderers
                     AutosizesSubviews = true
                 };
 
-                if (Element.EditorToolbar != null)
-                {
-                    var rend = Platform.CreateRenderer(e.NewElement.EditorToolbar);
-                    CustomInputAccessoryView = rend.NativeView;
+                //if (Element.EditorToolbar != null)
+                //{
+                //    var rend = Platform.CreateRenderer(e.NewElement.EditorToolbar);
+                //    CustomInputAccessoryView = rend.NativeView;
                     
-                }
+                //}
 
-                HideFormAccessoryBar.SetHideFormAccessoryBar(true);
+               // HideFormAccessoryBar.SetHideFormAccessoryBar(true);
 
                 SetNativeControl(webView);
             }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoadStateStuckOnRefresh.iml" filepath="$PROJECT_DIR$/.idea/modules/LoadStateStuckOnRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LoadStateStuckOnRefresh.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LoadStateStuckOnRefresh.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/benchmark/LoadStateStuckOnRefresh.benchmark.iml" filepath="$PROJECT_DIR$/.idea/modules/benchmark/LoadStateStuckOnRefresh.benchmark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/LoadStateStuckOnRefresh.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/LoadStateStuckOnRefresh.lib.iml" />
+    </modules>
+  </component>
+</project>

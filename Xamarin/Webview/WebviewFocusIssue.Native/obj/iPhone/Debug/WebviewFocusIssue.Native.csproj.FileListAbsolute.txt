@@ -1,0 +1,13 @@
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\bin\iPhone\Debug\Blank.exe
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\bin\iPhone\Debug\Blank.pdb
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\optimized\Entitlements.plist
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\optimized\
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\WebviewFocusIssue.Native.csprojAssemblyReference.cache
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\WebviewFocusIssue.Native.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\Blank.exe
+C:\Users\Carlos\Documents\Projetos\bug-reports\Xamarin\Webview\WebviewFocusIssue.Native\obj\iPhone\Debug\Blank.pdb

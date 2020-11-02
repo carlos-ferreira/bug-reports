@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>WebviewFocusIssue</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.company.WebviewFocusIssue</string>
+	<string>com.bloggerpro.ios</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
